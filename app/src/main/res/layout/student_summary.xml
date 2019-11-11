@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_hori_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/namecwid_column"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="First Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Last Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="CWID" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_nameid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_cwid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/middle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Course" />
+
+    <LinearLayout
+        android:id="@+id/bottom_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/courseID_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/courseID_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:text="Course ID" />
+
+            <EditText
+                android:id="@+id/courseID_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grade_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/grade_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:text="Grade" />
+
+            <EditText
+                android:id="@+id/gradeID_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
